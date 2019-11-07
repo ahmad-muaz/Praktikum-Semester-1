@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char nama [25];
+    int n_tugas, n_uts, n_uas, n_rata, i;
+    for (i=1; i<=20; i++){
+        cout << endl;
+        cout << "Mahasiswa ke " << i <<endl;
+        cout << "Masukkan nama mahasiswa: ";
+        cin >> nama;
+        cout << "Masukkan nilai tugas   : ";
+        cin >> n_tugas;
+        cout << "Masukkan nilai uts     : ";
+        cin >> n_uts;
+        cout << "Masukkan nilai uas     : ";
+        cin >> n_uas;
+        cout << "---------------------------" << endl;
+    
+        n_rata = ((0,3* n_tugas) + (0,3* n_uts) + (0,4* n_uas))/10;
+        cout << "Nama Mahasiswa : " << nama << endl;
+        cout << "Nilai akhir  : " << n_rata << endl;
+        
+        if (n_rata >=90)
+        {
+        cout << "Grade = A"<<endl;
+        }
+        else if (n_rata <90 and n_rata >=80)
+        {
+        cout << "Grade = B"<<endl;
+        }
+        else if (n_rata <80 and n_rata >=70)
+        {
+        cout << "Grade = C"<<endl;
+        }
+        else if (n_rata <70)
+        {
+        cout << "Grade = D"<<endl;
+        }
+    
+        else
+        {
+        cout << "tidak mempunyai nilai" <<endl;
+        }
+        
+    }
+}
